@@ -1,0 +1,37 @@
+
+
+
+.navbar-light { 
+    background-color: #FFB6C1; 
+    color: white;
+}
+.bgpink { 
+    background-color: #FFB6C1; 
+}
+
+.container-custom-shop {
+    padding: 10px 30px;
+}
+
+.outline-pink-wide {
+    border-width: 50px;
+    border-color: #FFB6C1; 
+}
+.btn-outline-neutral { 
+    border-width: 2px;
+    color: rgb(67, 160, 221); 
+    border-color: rgb(67, 160, 221); 
+}
+
+.btn-background-neutral { 
+    border-width: 2px;
+    color: White;
+    background-color: rgb(67, 160, 221); 
+    border-color: rgb(67, 160, 221); 
+    font-weight: 800;
+}
+
+.text-bold-pink { 
+    font-weight: 800;
+    color: #FFB6C1;
+}
