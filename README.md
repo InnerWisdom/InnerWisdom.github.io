@@ -1,6 +1,6 @@
 # InnerWisdom.github.io
 Repository for internet programming
 ## Результаты добавления метрики
-### Сводка: ![Image alt](https://sun9-38.userapi.com/impg/NPmzRGZgB1Ax89lvruIloP7GVvYmrqpb-nCmNw/pAL7CySD7WA.jpg?size=1304x921&quality=96&proxy=1&sign=3cf62355e6320bf45697926286bc9d34)
-### Карта кликов: ![Image alt](https://sun9-43.userapi.com/impg/HFKxGqe_YReFb_QGos59oNfaQ8cw0X7YuYjzTw/EYxXTYRHhrA.jpg?size=1239x833&quality=96&proxy=1&sign=1e8050787795b22d501fe9ba0f8c4fe7)
-### Посетители: ![Image alt](https://sun9-26.userapi.com/impg/f92JTdLUnzZvmMIh-I3reZEkzIHlhYXigdJpvA/nhLjG_XLZp4.jpg?size=1709x694&quality=96&proxy=1&sign=eff8ec8a6b52074e905d1fa0d999b53a)
+### Сводка: ![Image alt](https://sun9-63.userapi.com/impg/NAioQe0G0iA5xv4BJhBsB5c3xr1XubnlqpKx7Q/3gi4R06E-MA.jpg?size=871x832&quality=96&proxy=1&sign=931306088982b056d094d9574dee624c)
+### Карта кликов: ![Image alt](https://sun9-38.userapi.com/impg/rGylIVBNffxbs2JCIDJmRxEKQwlN5EeJKO1kNw/d_53LFJyqGA.jpg?size=1886x804&quality=96&proxy=1&sign=396e89945282f8db38b64b6dedddaf19)
+### Посетители: ![Image alt](https://sun9-8.userapi.com/impg/mEPhDBd52_NHPewlSoFLFRzBFFifN3q4Tk1o6w/GwmSIM1VkpA.jpg?size=1723x887&quality=96&proxy=1&sign=338e72f2a21de54861f562b450911ea2)
