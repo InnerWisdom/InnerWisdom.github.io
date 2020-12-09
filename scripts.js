@@ -59,8 +59,30 @@ function buttonPressed(evt) {
             html:'<div>Ваше имя </div>' + formData.get('userName')  +
             '<div>Ваш текст </div>' + formData.get('userText') +
             '<div>Ваш рейтинг </div>' + formData.get('userRating') +
-            '<div>Перенаправляем Вас на главную страницу </div>',
-            imageUrl: imagepath
+            '<div>Перенаправляем Вас на главную страницу </div>' +
+            'Осталось <b></b> миллисекунд.',
+            imageUrl: imagepath,
+            timer: 10000,
+            timerProgressBar: true,
+            willOpen: () => {
+                Swal.showLoading()
+                timerInterval = setInterval(() => {
+                  const content = Swal.getContent()
+                  if (content) {
+                    const b = content.querySelector('b')
+                    if (b) {
+                      b.textContent = Swal.getTimerLeft()
+                    }
+                  }
+                }, 100)
+              },
+              willClose: () => {
+                clearInterval(timerInterval)
+              }
+            }).then((result) => {
+              if (result.dismiss === Swal.DismissReason.timer) {
+                console.log('I was closed by the timer')
+              }
         })
         setTimeout(function() {document.location.href = "index.html";},10000);
         console.log("Перешли на страницу игры");
