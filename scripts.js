@@ -26,31 +26,37 @@ function buttonPressed(evt) {
   }
   else {
     var imagepath = 'images/bin.jpg';
+    var textFirst ='';
     if (rating.value == 1) {
       var imagepath = 'images/oneStar.png';
+      textFirst='Ужасно';
     }
 
     else if (rating.value == 2) {
       var imagepath = 'images/twoStar.png';
+      textFirst='Плохо';
     }
 
     else if (rating.value == 3) {
       var imagepath = 'images/threeStar.png';
+      textFirst='Ни о чём';
     }
 
     else if (rating.value == 4) {
       var imagepath = 'images/fourStar.png';
+      textFirst='Хорошо';
     }
 
     else if (rating.value == 5) {
       var imagepath = 'images/fiveStar.png';
+      textFirst='Отлично!';
     }
     
     formData.append('userName', document.forms[0].elements[0].value);
     formData.append('userText', document.forms[0].elements[1].value);
     formData.append('userRating', rating.value);
     Swal.fire({
-      title: 'Отлично!',
+      title: textFirst,
       html: '<div>Ваше имя </div>' + formData.get('userName') +
         '<div>Ваш текст </div>' + formData.get('userText') +
         '<div>Ваш рейтинг </div>' + formData.get('userRating') +
