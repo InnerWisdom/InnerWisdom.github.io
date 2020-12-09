@@ -8,7 +8,7 @@
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  
+
   <link rel="stylesheet" href="styles.css" />
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -20,10 +20,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body style="background-color: white">
-  <form class="form-inline my-2 my-lg-2">
+
+
+
+  <div class="form-inline my-2 my-lg-2">
     <div>
       <img src="images/favicon-32x32.png" class="img-fluid">
       <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
@@ -34,8 +38,8 @@
     </div>
     <img src="images/bin.jpg" class="img-fluid">
     <button type="button" class="btn btn-light">Корзина</button>
-    </div>
-  </form>
+  </div>
+  </div>
 
   <nav class="navbar navbar-expand-lg navbar-light  ">
     <a class="navbar-brand" href="index.html">Каталог</a>
@@ -119,10 +123,10 @@
               <div class="row">
                 <div class="col-5">
 
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Ольга</h5>
-                      <div class="card" style="width: 16rem;">
+                      <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Отзыв</h5>
                           <p class="card-text">Великолепная клубника, Как в описании..</p>
@@ -135,10 +139,10 @@
 
                 <div class="col-5">
 
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Ольга</h5>
-                      <div class="card" style="width: 16rem;">
+                      <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Отзыв</h5>
                           <p class="card-text">Великолепная клубника, Как в описании..</p>
@@ -153,10 +157,10 @@
               <div class="row">
                 <div class="col-5">
 
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Ольга</h5>
-                      <div class="card" style="width: 16rem;">
+                      <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Отзыв</h5>
                           <p class="card-text">Великолепная клубника, Как в описании..</p>
@@ -169,10 +173,10 @@
 
                 <div class="col-5">
 
-                  <div class="card" style="width: 18rem;">
+                  <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Ольга</h5>
-                      <div class="card" style="width: 16rem;">
+                      <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Отзыв</h5>
                           <p class="card-text">Великолепная клубника, Как в описании..</p>
@@ -186,78 +190,98 @@
             </div>
 
 
-            <div class="card-center my-4" style="width: 34rem;">
-              <div class="card-body">
-                <h5 class="card-title">Оставить отзыв</h5>
-                <div class="card" style="width: 32rem;">
+
+            <div class="card-center my-4">
+              <form id="reg">
+                <div class="input-group">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title">Оставить отзыв</h5>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">
 
-                      <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Имя" aria-label="Username"
-                          aria-describedby="basic-addon1">
-                    </h5>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-4 col-sm-offset-5">
+
+                                <label> Введите своё имя</label>
+                                <input type="text" value="user" required>
+
+                              </div>
+                            </div>
+                          </div>
+                        </h5>
+                      </div>
+                      <p class="card-text">
+
+                      <div class="input-group custom-padding">
+                        <textarea name="comment" class="form-control custom-padding" aria-label="With textarea"></textarea>
+                        <input type="submit"></button>
+                      </div>
+                      </p>
+                        <p><select name="select" size="3" multiple>
+                         <option selected value="1">Ужасно</option>
+                         <option value="2">Плохо</option>
+                         <option value="3">Ни о чём</option>
+                         <option value="4">Хорошо</option>
+                         <option value="5">Отлично</option>
+                        </select>
+                      <img src="images/stars.png" class="card-img">
+                    </div>
+
                   </div>
-                  <p class="card-text">
-
-                  <div class="input-group">
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                  </div>
-
-                  </p>
-                  <img src="images/stars.png" class="card-img">
                 </div>
-              </div>
+              </form>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-2 bgpink">
+
+      <div class="card my-1">
+        <div class="card-body">
+          <h1>
+            <p class="text-center">Другие сорта</p>
+          </h1>
+
+
+          <div class="card my-3">
+            <img src="images/berrySample.jpg" class="card-img-top">
+            <div class="card-body">
             </div>
           </div>
-        </div>
-
-      </div>
-      <div class="col-2 bgpink">
-
-        <div class="card my-1">
-          <div class="card-body">
-            <h1>
-              <p class="text-center">Другие сорта</p>
-            </h1>
-
-
-            <div class="card my-3">
-              <img src="images/berrySample.jpg" class="card-img-top">
-              <div class="card-body">
-              </div>
+          <div class="card my-3">
+            <img src="images/berrySample.jpg" class="card-img-top">
+            <div class="card-body">
             </div>
-            <div class="card my-3">
-              <img src="images/berrySample.jpg" class="card-img-top">
-              <div class="card-body">
-              </div>
-            </div>
-            <div class="card my-3">
-              <img src="images/berrySample.jpg" class="card-img-top">
-              <div class="card-body">
-              </div>
-            </div>
-            <div class="card my-3">
-              <img src="images/berrySample.jpg" class="card-img-top">
-              <div class="card-body">
-              </div>
-            </div>
-            <div class="card my-3">
-              <img src="images/berrySample.jpg" class="card-img-top">
-              <div class="card-body">
-              </div>
-            </div>
-
-
           </div>
+          <div class="card my-3">
+            <img src="images/berrySample.jpg" class="card-img-top">
+            <div class="card-body">
+            </div>
+          </div>
+          <div class="card my-3">
+            <img src="images/berrySample.jpg" class="card-img-top">
+            <div class="card-body">
+            </div>
+          </div>
+          <div class="card my-3">
+            <img src="images/berrySample.jpg" class="card-img-top">
+            <div class="card-body">
+            </div>
+          </div>
+
+
         </div>
-
-
       </div>
+
+
     </div>
   </div>
+  </div>
 
-      
+  <script src="scripts.js"></script>
 </body>
 
 </html>
