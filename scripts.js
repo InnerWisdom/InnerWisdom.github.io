@@ -76,7 +76,7 @@ function buttonPressed(evt) {
       }
     }).then((result) => {
       if (result.dismiss === Swal.DismissReason.timer) {
-        console.log('I was closed by the timer')
+        console.log('Форма закрыта по таймеру')
       }
     })
     setTimeout(function () { document.location.href = "index.html"; }, 10000);
