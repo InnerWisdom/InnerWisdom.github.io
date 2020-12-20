@@ -16,7 +16,7 @@ function formSubmit(evt) {
       'Ошибка!',
       'Вы не ввели имя!',
       'error'
-    )
+    );
     console.log("Вы не ввели имя или введено стандартное имя user");
   }
   else if (text.value == '') {
@@ -24,7 +24,7 @@ function formSubmit(evt) {
       'Ошибка!',
       'Вы не ввели текст!',
       'error'
-    )
+    );
     console.log("Вы не ввели текст");
   }
   else {
@@ -69,25 +69,25 @@ function formSubmit(evt) {
       timer: 10000,
       timerProgressBar: true,
       willOpen: () => {
-        Swal.showLoading()
+        Swal.showLoading();
         timerInterval = setInterval(() => {
-          const content = Swal.getContent()
+          const content = Swal.getContent();
           if (content) {
-            const b = content.querySelector('b')
+            const b = content.querySelector('b');
             if (b) {
-              b.textContent = Swal.getTimerLeft()
+              b.textContent = Swal.getTimerLeft();
             }
           }
         }, 100)
       },
       willClose: () => {
-        clearInterval(timerInterval)
+        clearInterval(timerInterval);
       }
     }).then((result) => {
       if (result.dismiss === Swal.DismissReason.timer) {
         console.log('Форма закрыта по таймеру');
       }
-    })
+    });
     setTimeout(function () { document.location.href = "index.html"; }, 10000);
     console.log("Перешли на главную");
   }
