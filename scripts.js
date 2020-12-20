@@ -81,7 +81,7 @@ function formSubmit(evt) {
         }, 100)
       },
       willClose: () => {
-        clearInterval(timerInterval);
+        clearInterval(timerInterval)
       }
     }).then((result) => {
       if (result.dismiss === Swal.DismissReason.timer) {
@@ -92,3 +92,11 @@ function formSubmit(evt) {
     console.log("Перешли на главную");
   }
 }
+
+//textarea не обрабатывается при обычном вводе с enter для этого написана функция, если же вводим enter+shift то происходит переход на другую строку, как в оригинале
+function submitOnEnter(event){
+  if(event.which === 13 && !event.shiftKey){
+      event.target.form.dispatchEvent(new Event("submit", {cancelable: true}));
+  }
+}
+document.getElementById("comment").addEventListener("keypress", submitOnEnter);
