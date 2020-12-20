@@ -93,9 +93,9 @@ function formSubmit(evt) {
   }
 }
 
-//textarea не обрабатывается при обычном вводе с enter для этого написана функция, если же вводим enter+shift то происходит переход на другую строку, как в оригинале
+//данная функция создана для того, чтобы происходила отправка формы для textArea при нажатии "Enter"
 function submitOnEnter(event){
-  if(event.which === 13 && !event.shiftKey){
+  if(event.which === 13){
       event.target.form.dispatchEvent(new Event("submit", {cancelable: true}));
   }
 }
