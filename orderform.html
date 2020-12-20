@@ -224,7 +224,7 @@
                               <div class="col-sm-4 col-sm-offset-5">
 
                                 <label> Введите своё имя</label>
-                                <input type="text" value="user" required>
+                                <input type="text" id="username" value="user" required>
 
                               </div>
                             </div>
@@ -234,17 +234,17 @@
                       <p class="card-text">
 
                       <div class="input-group custom-padding">
-                        <textarea name="comment" class="form-control custom-padding"
+                        <textarea id="comment" class="form-control custom-padding"
                           aria-label="With textarea"></textarea>
-                        <input type="submit"></button>
+                        <input type="submit" id="btnsubmit"></button>
                       </div>
                       </p>
-                      <select  name="select" size="5" multiple>
-                          <option selected value="1">Ужасно</option>
+                      <select  id="selectRating" size="5" multiple>
+                          <option value="1">Ужасно</option>
                           <option value="2">Плохо</option>
                           <option value="3">Ни о чём</option>
                           <option value="4">Хорошо</option>
-                          <option value="5">Отлично</option>
+                          <option selected value="5">Отлично</option>
                         </select>
                         <img src="images/stars.png" class="card-img">
                     </div>

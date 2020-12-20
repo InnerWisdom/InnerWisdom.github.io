@@ -1,20 +1,23 @@
-let formData = new FormData();
-var buttonsubmit = document.forms[0].elements[2];
-var text = document.forms[0].elements[1];
-var rating = document.forms[0].elements[3];
-buttonsubmit.addEventListener("click", buttonPressed);
-console.log("Скрипт загружен")
-function buttonPressed(evt) {
-  console.log("Кнопка нажата загружен");
-  evt.preventDefault();
+let formData = document.getElementById('reg');
 
-  if (document.forms[0].elements[0].value == 'user' || document.forms[0].elements[0].value == '') {
+formData.addEventListener("submit", formSubmit);
+console.log("Скрипт загружен");
+
+function formSubmit(evt) {
+  let formData = new FormData();
+  console.log("Кнопка нажата");
+  evt.preventDefault();
+  
+  const name = document.getElementById('username');
+  const text = document.getElementById('comment');
+  const rating = document.getElementById('selectRating');
+  if (name.value == 'user' || name.value == '') {
     Swal.fire(
       'Ошибка!',
       'Вы не ввели имя!',
       'error'
     )
-    console.log("Вы не ввели имя");
+    console.log("Вы не ввели имя или введено стандартное имя user");
   }
   else if (text.value == '') {
     Swal.fire(
@@ -52,8 +55,8 @@ function buttonPressed(evt) {
       textFirst='Отлично!';
     }
     
-    formData.append('userName', document.forms[0].elements[0].value);
-    formData.append('userText', document.forms[0].elements[1].value);
+    formData.append('userName', name.value);
+    formData.append('userText', text.value);
     formData.append('userRating', rating.value);
     Swal.fire({
       title: textFirst,
@@ -82,10 +85,10 @@ function buttonPressed(evt) {
       }
     }).then((result) => {
       if (result.dismiss === Swal.DismissReason.timer) {
-        console.log('Форма закрыта по таймеру')
+        console.log('Форма закрыта по таймеру');
       }
     })
     setTimeout(function () { document.location.href = "index.html"; }, 10000);
-    console.log("Перешли на страницу игры");
+    console.log("Перешли на главную");
   }
 }
