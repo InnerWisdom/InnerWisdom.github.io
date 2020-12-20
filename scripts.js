@@ -81,7 +81,7 @@ function formSubmit(evt) {
         }, 100)
       },
       willClose: () => {
-        clearInterval(timerInterval)
+        clearInterval(timerInterval);
       }
     }).then((result) => {
       if (result.dismiss === Swal.DismissReason.timer) {
